@@ -9,6 +9,8 @@ public class ForwardMovingCharacter : MonoBehaviour
     public float speed = 2.0f;
     // The target x-coordinate at which the sprite should stop
     private float stopPositionX;
+    public GameObject CV;
+    public GameObject DIPLOMA;
     //public GameObject RejectButton;
     void Start()
     {
@@ -22,6 +24,10 @@ public class ForwardMovingCharacter : MonoBehaviour
         {
             // Move the sprite along the x-axis
             transform.position += Vector3.right * speed * Time.deltaTime;
+        }
+        else{
+        CV.SetActive(true);
+        DIPLOMA.SetActive(true);
         }
     }
 }
