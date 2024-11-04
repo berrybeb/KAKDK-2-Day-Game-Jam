@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class Reject_ONclick : MonoBehaviour
 {
-    public GameObject Character;
-    public GameObject cv;
-    public GameObject diploma;
+    public GameObject CharacterREJECTED;
+    public GameObject cvREJECTED;
+    public GameObject diplomaREJECTED;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +21,8 @@ public class Reject_ONclick : MonoBehaviour
     }
 
     public void Click(){
-    Character.SetActive(false); 
-    cv.SetActive(false);
-    diploma.SetActive(false);
+    CharacterREJECTED.SetActive(false); 
+    cvREJECTED.SetActive(false);
+    diplomaREJECTED.SetActive(false);
     }
 }
