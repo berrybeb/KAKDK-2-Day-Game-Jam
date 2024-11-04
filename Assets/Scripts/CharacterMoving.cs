@@ -13,19 +13,15 @@ public class NewBehaviourScript : MonoBehaviour
     void Start()
     {
         // Calculate 1/3 of the game window width in world units
-        stopPositionX = Camera.main.ViewportToWorldPoint(new Vector3(1.0f / 5.5f, 0, 0)).x;
+        stopPositionX = Camera.main.ViewportToWorldPoint(new Vector3(1.0f / 2.0f, 0, 0)).x;
     }
 
     void Update()
     {
-        // Check if the sprite's x-position is less than the stop position
         if (transform.position.x < stopPositionX)
         {
             // Move the sprite along the x-axis
             transform.position += Vector3.right * speed * Time.deltaTime;
-        }
-        else{
-            
         }
     }
 }
