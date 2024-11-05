@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class RuleBook : MonoBehaviour
 {
+    public GameObject Pages;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void OpenPages(){
+        if(Pages != null){
+            bool isActive = Pages.activeSelf;
+            Pages.SetActive(!isActive);
+        }
     }
 }
